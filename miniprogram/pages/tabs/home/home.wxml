@@ -1,0 +1,8 @@
+<custom-navigator />
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+    <text >
+      home
+    </text>
+  </view>
+</scroll-view>

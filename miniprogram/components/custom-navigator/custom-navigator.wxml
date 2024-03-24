@@ -1,0 +1,15 @@
+<view class="navigator" style="height: {{navBarHeight}}px; padding-top: {{statusBarHeight}}px; background-color: rgba(255, 255, 255, {{reverse ? reverseOpacity : 1}})">
+  <view class="operation" style="top: {{statusBarHeight}}px">
+    <view class="icon-container" wx:if="{{!enableBack && hasCurrentPagesLength}}">
+      <image class="back" src="/assets/back.png" bindtap="handleBack" style="{{backStyle}}"></image>
+    </view>
+    <view class="icon-container" wx:else>
+      <image class="logo" src="/assets/on-logo.png" mode="heightFix"></image>
+    </view>
+  </view>
+  <view class="content">
+    <view wx:if="{{title}}">{{title}}</view>
+    <slot wx:else></slot>
+  </view>
+  <view class="space" wx:if="{{!takeSpace && !reverse}}" style="height: {{navBarHeight}}px"></view>
+</view>

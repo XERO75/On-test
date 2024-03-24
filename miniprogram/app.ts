@@ -1,18 +1,23 @@
 // app.ts
-App<IAppOption>({
-  globalData: {},
+App({
   onLaunch() {
-    // 展示本地存储能力
-    const logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
+    this.initGlobalData();
+  },
+  globalData: {
+    navBarHeight: 0,
+    statusBarHeight: 0,
+    language: '',
+  },
+  initGlobalData() {
+    const systemInfo = wx.getSystemInfoSync();
+    const menuButtonInfo = wx.getMenuButtonBoundingClientRect();
 
-    // 登录
-    wx.login({
-      success: res => {
-        console.log(res.code)
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-      },
-    })
+    this.globalData.statusBarHeight = systemInfo.statusBarHeight;
+    this.globalData.navBarHeight =
+      (menuButtonInfo.top - systemInfo.statusBarHeight) * 2 +
+      menuButtonInfo.height +
+      systemInfo.statusBarHeight;
+
+    this.globalData.language = systemInfo.language;
   },
 })

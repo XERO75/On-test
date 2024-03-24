@@ -1,8 +1,21 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/tabs/home/home",
+    "pages/tabs/me/me"
   ],
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/tabs/home/home",
+        "text": "Home"
+      },
+      {
+        "pagePath": "pages/tabs/me/me",
+        "text": "Me"
+      }
+    ]
+  },
   "window": {
     "navigationBarTextStyle": "black",
     "navigationStyle": "custom"
