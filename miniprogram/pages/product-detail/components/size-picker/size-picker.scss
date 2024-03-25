@@ -1,0 +1,35 @@
+
+.size-wrap { 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+  &-title {
+    flex: 1;
+    width: 100%;
+  }
+  &-body {
+    margin: 12px 0 0;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fill,minmax(8ch,1fr));
+    &-item {
+      height: 48px;
+      padding: 15px 0;
+      background: #faf7f6;
+      border: 1px solid #faf7f6;
+      border-radius: 2px;
+      user-select: none;
+      line-height: 48px;
+      text-align: center;
+      &.selected {
+        outline: 1px solid #000; 
+      };
+      &.disable {
+        background-color: #fff;
+        border-color: #fff;
+        color: #ccc;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<view wx:if="{{!loaded}}" style="{{extraStyle}}" class="placeholder"></view>
+<image 
+  class="image {{loadedImageClass}}" 
+  style="{{extraStyle}}" 
+  lazy-load 
+  src="{{schemaData.src}}" 
+  mode="{{mode}}" 
+  bindload="onImageLoad" >
+</image>

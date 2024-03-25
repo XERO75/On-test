@@ -1,0 +1,139 @@
+// Flex Layout
+.flex {
+  display: flex;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.col-grow {
+  flex: 1;
+  width: 0;
+}
+.row-grow {
+  flex: 1;
+  height: 0;
+}
+
+.just-start {
+  justify-content: start;
+}
+.just-end {
+  justify-content: end;
+}
+.just-center {
+  justify-content: center;
+}
+.just-between {
+  justify-content: space-between;
+}
+.just-evenly {
+  justify-content: space-evenly;
+}
+
+.align-center {
+  align-items: center;
+}
+.align-start {
+  align-items: start;
+}
+.align-end {
+  align-items: end;
+}
+.align-flex-end {
+  align-items: flex-end;
+}
+.align-self-baseline {
+  align-self: baseline;
+}
+.align-self-center {
+  align-self: center;
+}
+.align-self-end {
+  align-self: flex-end;
+}
+.align-self-start {
+  align-self: flex-start;
+}
+
+// Positioning
+.pos-relative {
+  position: relative;
+}
+.pos-absolute {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.pos-fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+// Font
+.text-center {
+  text-align: center;
+}
+
+// Sizing
+.screen-w {
+  width: 100vw;
+}
+.screen-h {
+  height: 100vh;
+}
+.w-fill {
+  width: 100%;
+}
+.w-content {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.h-fill {
+  height: 100%;
+}
+.fill {
+  width: 100%;
+  height: 100%;
+}
+
+
+// scroll
+.scroll-y {
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+// box model
+.db {
+  display: block;
+}
+.border-box {
+  box-sizing: border-box;
+}
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}

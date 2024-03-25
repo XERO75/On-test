@@ -34,9 +34,6 @@ Component({
       this.setData({
         hasCurrentPagesLength: !getCurrentPages().length,
       });
-      console.log('====================================');
-      console.log("getCurrentPages().length",getCurrentPages().length);
-      console.log('====================================');
       const { reverse } = this.data;
       if (reverse) {
         this.capsuleBlack();
@@ -62,11 +59,9 @@ Component({
       wx.navigateBack();
     },
     capsuleWhite() {
-      // make capsule color white
       wx.setNavigationBarColor({ frontColor: '#000000', backgroundColor: '#000000' });
     },
     capsuleBlack() {
-      // make capsule color transparent black
       wx.setNavigationBarColor({ frontColor: '#ffffff', backgroundColor: '#ffffff' });
     },
     setBackColor(invert: number) {

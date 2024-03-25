@@ -1,0 +1,11 @@
+<view class="size-wrap">
+  <view class="size-wrap-title">
+    尺码
+  </view>
+  <view class="size-wrap-body">
+    <view wx:for="{{sizes}}" class="size-wrap-body-item {{selectedIndex === index ? 'selected' : ''}}  {{item.inStock ? '' : 'disable'}}"  wx:key="index" bindtap="handleTap" data-index="{{index}}"
+    >
+      {{item.size}}
+    </view>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "schema-carousel": "/components/common/carousel/carousel",
+    "custom-navigator": "/components/custom-navigator/custom-navigator",
+    "ui-image": "/components/common/image/image",
+    "gender-picker": "./components/gender-picker/gender-picker",
+    "size-picker": "./components/size-picker/size-picker"
+  }
+}

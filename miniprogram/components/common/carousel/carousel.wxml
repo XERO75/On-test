@@ -1,0 +1,9 @@
+<swiper indicator-dots="{{true}}" style="{{style}}" autoplay="{{schemaData.autoplay}}" interval="{{schemaData.interval}}" circular="{{true}}">
+  <block wx:for="{{schemaData.items}}" wx:key="index">
+    <swiper-item>
+      <view class="swiper-item">
+        <ui-image schemaData="{{item}}" mode="aspectFill" extraStyle="height: 100%"></ui-image>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>

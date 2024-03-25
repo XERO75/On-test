@@ -1,0 +1,20 @@
+@import '../../../style/vars';
+
+.placeholder {
+  width: 100%;
+  background-color: $grey;
+  z-index: 1;
+  position: absolute;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  opacity: 0;
+  background-color: $grey;
+  transition: opacity 0.3s;
+
+  &.loaded-image {
+    opacity: 1;
+  }
+}

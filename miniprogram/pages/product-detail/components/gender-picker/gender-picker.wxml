@@ -1,0 +1,5 @@
+<view class="container">
+  <view wx:for="{{genders}}" class="gender-item {{active === item ? 'selected' : ''}}"  wx:key="index" bindtap="handleChange" data-gender="{{item}}" >
+    {{item}}
+  </view>
+</view>
