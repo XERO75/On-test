@@ -1,0 +1,87 @@
+<!--
+此文件为开发者工具生成，生成时间: 3/26/2024, 7:03:38 PM
+使用方法：
+在 /Users/xavier/WeChatProjects/miniprogram-2/miniprogram/pages/products/product-detail/product-detail.wxml 引入模板
+
+```
+<import src="product-detail.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+```
+
+在 /Users/xavier/WeChatProjects/miniprogram-2/miniprogram/pages/products/product-detail/product-detail.wxss 中引入样式
+```
+@import "./product-detail.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="sk-container">
+      <view>
+        <view class="navigator--navigator" style="height: 87px; padding-top: 47px; background-color: rgba(255, 255, 255, 0)">
+          <view class="navigator--operation" style="top: 47px">
+            <view class="navigator--icon-container">
+              <image class="navigator--back sk-image" style="filter: invert(1);"></image>
+            </view>
+          </view>
+          <view class="navigator--content"></view>
+        </view>
+      </view>
+      <view>
+        <swiper autoplay="false" circular="true" current="0" indicator-dots="true" interval="5000" style="height: 500px;">
+          <swiper-item style="position: absolute; width: 100%; height: 100%; transform: translate(0%, 0px) translateZ(0px);">
+            <view class="carousel--swiper-item">
+              <view>
+                <image class="image--image image--loaded-image sk-image" lazy-load="true" mode="aspectFill" style="height: 100%"></image>
+              </view>
+            </view>
+          </swiper-item>
+        </swiper>
+      </view>
+      <scroll-view class="image-scroll" enable-flex="true" scroll-with-animation="true" scroll-x="true">
+        <view class="image-container">
+          <image class="image-item sk-image" data-index="0"></image>
+          <image class="image-item sk-image" data-index="1"></image>
+          <image class="image-item sk-image" data-index="2"></image>
+        </view>
+      </scroll-view>
+      <view class="content">
+        <view class="title-container">
+          <text class="name sk-transparent sk-text-18-7500-770 sk-text sk-image">Cloudmonster</text>
+          <text class="price sk-transparent sk-text-18-7500-716 sk-text sk-image" style="background-position-x: 100%;">¥1390.00</text>
+        </view>
+        <view class="description-container">
+          <text class="description sk-transparent sk-text-18-7500-794 sk-text sk-image">长距离缓震跑鞋，适合长距离跑，路跑</text>
+        </view>
+      </view>
+      <view>
+        <view class="gender-picker--container">
+          <view class="gender-picker--gender-item sk-transparent sk-text-18-7500-599 sk-text sk-image" data-gender="mens">
+            mens
+          </view>
+          <view class="gender-picker--gender-item sk-transparent sk-text-18-7500-323 sk-text sk-image" data-gender="womens">
+            womens
+          </view>
+        </view>
+      </view>
+      <view>
+        <view class="picker--size-wrap">
+          <view class="picker--size-wrap-title sk-transparent sk-text-18-7500-760 sk-text sk-image">
+            尺码
+          </view>
+        </view>
+      </view>
+    </view>
+    <view is="components/custom-navigator/custom-navigator">
+      <view class="navigator--navigator" style="height: 87px; padding-top: 47px; background-color: rgba(255, 255, 255, 0)">
+        <view class="navigator--operation" style="top: 47px">
+          <view class="navigator--icon-container">
+            <image class="navigator--back sk-image" style="filter: invert(1)"></image>
+          </view>
+        </view>
+        <view class="navigator--content"></view>
+      </view>
+    </view>
+  </view>
+</template>

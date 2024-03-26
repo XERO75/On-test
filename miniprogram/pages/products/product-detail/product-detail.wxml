@@ -1,3 +1,5 @@
+<import src="product-detail.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
 <custom-navigator reverse="{reverseOpacity}" enableBack></custom-navigator>
 <block wx:if="{{!loading}}">
   <schema-carousel schemaData="{{carousel}}" /> 

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "mp-html": "mp-html",
+    "custom-navigator": "/components/custom-navigator/custom-navigator"
+  }
+}
