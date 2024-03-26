@@ -32,7 +32,7 @@ Component({
   lifetimes: {
     attached() {
       this.setData({
-        hasCurrentPagesLength: !getCurrentPages().length,
+        hasCurrentPagesLength: !!getCurrentPages().length,
       });
       const { reverse } = this.data;
       if (reverse) {

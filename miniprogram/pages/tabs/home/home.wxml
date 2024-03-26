@@ -1,8 +1,6 @@
 <custom-navigator />
 <scroll-view class="scrollarea" scroll-y type="list">
   <view class="container">
-    <text >
-      home
-    </text>
+    <navigator url="/pages/product-detail/product-detail?id=1" hover-class="navigator-hover">Link to pdp</navigator>
   </view>
 </scroll-view>
