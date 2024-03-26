@@ -22,7 +22,7 @@
         <view class="navigator--navigator" style="height: 87px; padding-top: 47px; background-color: rgba(255, 255, 255, 0)">
           <view class="navigator--operation" style="top: 47px">
             <view class="navigator--icon-container">
-              <image class="navigator--back sk-image" style="filter: invert(1)"></image>
+              <image class="navigator--back sk-image" style="filter: invert(1);"></image>
             </view>
           </view>
           <view class="navigator--content"></view>
@@ -41,7 +41,7 @@
       </view>
       <scroll-view class="image-scroll" enable-flex="true" scroll-with-animation="true" scroll-x="true">
         <view class="image-container">
-          <image class="image-item selected sk-image" data-index="0"></image>
+          <image class="image-item sk-image" data-index="0"></image>
           <image class="image-item sk-image" data-index="1"></image>
           <image class="image-item sk-image" data-index="2"></image>
         </view>
@@ -57,7 +57,7 @@
       </view>
       <view>
         <view class="gender-picker--container">
-          <view class="gender-picker--gender-item gender-picker--selected sk-transparent sk-text-18-7500-599 sk-text sk-image" data-gender="mens">
+          <view class="gender-picker--gender-item sk-transparent sk-text-18-7500-599 sk-text sk-image" data-gender="mens">
             mens
           </view>
           <view class="gender-picker--gender-item sk-transparent sk-text-18-7500-323 sk-text sk-image" data-gender="womens">
