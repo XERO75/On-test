@@ -2,7 +2,6 @@ export enum Gender {
   Male = 'mens',
   Female = 'womens'
 }
-
 export interface ShoeSize {
   id: number;
   label: string;
