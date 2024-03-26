@@ -15,6 +15,7 @@ This project adopts several performance optimization measures to enhance the loa
 - **Using CDN Resources**: Store some common libraries, style files, and other resources on CDN to accelerate resource loading.
 - **Skeleton Screens**: Use skeleton screen technology during page loading to provide a preview of the loading process, reducing user waiting time.
 - **Lazy-load Images**: Employ lazy-load technology for images on the page, delaying image loading to optimize page loading speed and smoothness.
+- **Different Resolution Images**: Utilize images of different resolutions to reduce unnecessary loading and improve user experience.
 
 ## Getting Started
 
@@ -23,8 +24,10 @@ This project adopts several performance optimization measures to enhance the loa
 ```bash
 git clone https://github.com/XERO75/On-test.git
 ``````
-### 2. Run the Project
+### 2. set up the mock data
+import `mock/mock.config.json` to WeChat Mini Program developer tools, this will proxy the API requests to the mock server.
 
+### 3. Run the Project
 Open the project using the WeChat Mini Program developer tools and preview or debug.
 
 
