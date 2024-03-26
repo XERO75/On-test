@@ -1,8 +1,8 @@
-import { CarouselSchema } from "../../components/common/types/schema";
-import { fetchProductDetailById } from "../../services/cms";
-import { transformProductApiResponseData } from "../../services/transformCmsApiResponseData";
-import { Gender } from "../../types/cms";
-import { ProductColor } from "../../types/product";
+import { CarouselSchema } from "../../../components/common/types/schema";
+import { fetchProductDetailById } from "../../../services/cms";
+import { transformProductApiResponseData } from "../../../services/transformCmsApiResponseData";
+import { Gender } from "../../../types/cms";
+import { ProductColor } from "../../../types/product";
 
 Page({
   data: {

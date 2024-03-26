@@ -1,8 +1,16 @@
 {
   "pages": [
     "pages/tabs/home/home",
-    "pages/tabs/me/me",
-    "pages/product-detail/product-detail"
+    "pages/tabs/me/me"
+  ],
+  "subpackages": [
+    {
+      "root": "pages/products",
+      "pages": [
+        "product-detail/product-detail",
+        "demo/demo"
+      ]
+    }
   ],
   "tabBar": {
     "custom": true,

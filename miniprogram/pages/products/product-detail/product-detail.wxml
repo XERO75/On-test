@@ -1,0 +1,3 @@
+<import src="product-detail.skeleton.wxml"/>
+<template is="skeleton" />
+<custom-navigator reverse="{reverseOpacity}" enableBack></custom-navigator>
