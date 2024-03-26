@@ -10,7 +10,6 @@ Component({
   },
   lifetimes: {
     attached() {
-      console.log('sizes', this.properties.sizes);
     },
   },
   methods: {

@@ -19,7 +19,7 @@ Page({
   },
   async onLoad(options: { id: string }) {
     this.setData({ loading: true });
-    const { id = '1' } = options; // for test
+    const { id } = options; // for test
     const data = await fetchProductDetailById(id)
     const { name, price, description, colors } = transformProductApiResponseData(data)
     const carousel = {
@@ -40,7 +40,7 @@ Page({
     this._updateCurrentSizes();
   },
 
-  handleGenderChange(e: WechatMiniprogram.TouchEvent) {
+  handleGenderChange: function(e: WechatMiniprogram.TouchEvent) {
     const active = e.detail.active;
     this.setData({ gender: active, selectedIndex: 0 });
     this._updateCurrentColors()

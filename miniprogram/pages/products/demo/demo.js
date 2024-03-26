@@ -29,9 +29,6 @@ Page({
     }
     // 获取组件实例
     this.ctx = this.selectComponent('#article')
-    console.log('====================================');
-    console.log("this.ctx", this.ctx);
-    console.log('====================================');
     if (e.index === '1') {
       // 开启编辑
       data.editable = true
